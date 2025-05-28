@@ -59,6 +59,7 @@ import ecuador_calendar from './ecuador_calendar.png';
 import pasta from './pasta.png';
 import bounty from './bounty.png';
 import cocktails from './cocktails.png';
+import bari_poster from './bari_poster.png'
 
 export const assets = {
     user_image,
@@ -121,7 +122,8 @@ export const assets = {
     ecuador_calendar,
     pasta,
     bounty,
-    cocktails
+    cocktails,
+    bari_poster
 };
 
 export const workData = [
@@ -168,7 +170,8 @@ export const galleryData = [
     {
       imgelink: assets.ohme_brand_mock_ups,
       title: "Graphic Design",
-      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials."
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
     },
     {
       imgelink: assets.taghazout,
@@ -177,6 +180,11 @@ export const galleryData = [
     },
     {
       imgelink: assets.taghazout2,
+      title: "Graphic Design",
+      description: "Extended series exploring visual narratives of the Moroccan surf town through design."
+    },
+    {
+      imgelink: assets.bari_poster,
       title: "Graphic Design",
       description: "Extended series exploring visual narratives of the Moroccan surf town through design."
     },
@@ -221,3 +229,5 @@ export const galleryData = [
       description: "Informational leaflet design combining clear hierarchy with engaging visual elements."
     },
   ];
+
+  
