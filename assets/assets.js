@@ -6,7 +6,6 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
@@ -35,6 +34,31 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import ohme_brand_mock_ups from './ohme_brand_mock_ups.png';
+import heritage from './heritage.png';
+import ohme_icons from './ohme_icons.png';
+import ohme_guidelines from './ohme_guidelines.png';
+import graph from './graph.png';
+import mazo from './mazo.png';
+import heritage_branding from './heritage_branding.png';
+import icons from './icons.png';
+import leaflet from './leaflet.png';
+import elevate from './elevate.png';
+import business_cards from './business_cards.png';
+import illustration from './illustration.png';
+import illustration_2 from './illustration_2.png';
+import thailand from './thailand.png';
+import saka_kala from './saka_kala.png';
+import taghazout2 from './taghazout2.png';
+import taghazout from './taghazout1.png';
+import locus from './locus.png';
+import officeposters from './officeposters.png';
+import wedding from './wedding.png';
+import menus from './menus.png';
+import ecuador_calendar from './ecuador_calendar.png';
+import pasta from './pasta.png';
+import bounty from './bounty.png';
+import cocktails from './cocktails.png';
 
 export const assets = {
     user_image,
@@ -45,7 +69,6 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    firebase,
     figma,
     git,
     mongodb,
@@ -73,7 +96,32 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    ohme_brand_mock_ups,
+    heritage,
+    ohme_icons,
+    ohme_guidelines,
+    graph,
+    mazo,
+    heritage_branding,
+    icons,
+    leaflet,
+    elevate,
+    business_cards,
+    illustration_2,
+    illustration,
+    thailand,
+    saka_kala,
+    taghazout,
+    taghazout2,
+    locus,
+    officeposters,
+    wedding,
+    menus,
+    ecuador_calendar,
+    pasta,
+    bounty,
+    cocktails
 };
 
 export const workData = [
@@ -113,5 +161,63 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.mongodb, assets.figma, assets.git
 ];
+
+export const galleryData = [
+    {
+      imgelink: assets.ohme_brand_mock_ups,
+      title: "Graphic Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials."
+    },
+    {
+      imgelink: assets.taghazout,
+      title: "Graphic Design",
+      description: "Creative design project inspired by the coastal beauty of Taghazout, Morocco."
+    },
+    {
+      imgelink: assets.taghazout2,
+      title: "Graphic Design",
+      description: "Extended series exploring visual narratives of the Moroccan surf town through design."
+    },
+    {
+      imgelink: assets.bounty,
+      title: "Graphic Design",
+      description: "Marketing campaign design featuring bold typography and vibrant color schemes."
+    },
+    {
+      imgelink: assets.elevate,
+      title: "Graphic Design",
+      description: "Modern brand identity system designed to elevate business presence and market positioning."
+    },
+    {
+      imgelink: assets.ohme_icons,
+      title: "Graphic Design",
+      description: "Comprehensive icon system designed for digital applications with consistent visual language."
+    },
+    {
+      imgelink: assets.locus,
+      title: "Graphic Design",
+      description: "Location-based design project exploring spatial relationships through visual communication."
+    },
+    {
+      imgelink: assets.graph,
+      title: "Graphic Design",
+      description: "Custom graph and chart designs that transform complex data into accessible visual stories."
+    },
+    {
+      imgelink: assets.icons,
+      title: "Graphic Design",
+      description: "Curated collection of custom icons designed for various digital and print applications."
+    },
+    {
+      imgelink: assets.business_cards,
+      title: "Graphic Design",
+      description: "Professional business card designs that balance creativity with practical functionality."
+    },
+    {
+      imgelink: assets.leaflet,
+      title: "Graphic Design",
+      description: "Informational leaflet design combining clear hierarchy with engaging visual elements."
+    },
+  ];

@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className='flex-1'>
             <div className='flex'>
-                <h1>Frankie Pike</h1>
+                <h2>Frankie Pike</h2>
             </div>
             <p className='mb-4 max-w-2x1 mt-4'>
                Software Engineering bootcamp graduate with a strong foundation in full-stack
