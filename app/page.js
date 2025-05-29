@@ -1,8 +1,10 @@
 'use client'
-import FeaturedGallery from "@/app/components/FeaturedGallery";
+import GraphicsGallery from "@/app/components/GraphicsGallery";
 import About from "./components/About";
-import GraphicDesign from "./components/GraphicDesign";
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import IllustrationGallery from "./components/IllustrationGallery"
 
 
 export default function Home() {
@@ -10,8 +12,10 @@ export default function Home() {
     <>
     <Navbar />
     <About />
-    {/* <GraphicDesign /> */}
-    <FeaturedGallery />
+    <GraphicsGallery />
+    <IllustrationGallery />
+    <Contact />
+    <Footer />
     </>
   );
 }

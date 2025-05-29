@@ -59,7 +59,15 @@ import ecuador_calendar from './ecuador_calendar.png';
 import pasta from './pasta.png';
 import bounty from './bounty.png';
 import cocktails from './cocktails.png';
-import bari_poster from './bari_poster.png'
+import bari_poster from './bari_poster.png';
+import downing from './downing.png';
+import seraca_icons from './seraca_icons.png';
+import cat from './cat.png';
+import mental_health_1 from './mental_health_1.png';
+import mental_health_2 from './mental_health_2.png';
+import mind_body from './mind_body.png';
+import wedding_photo from './wedding_photo.png';
+import ohme_flyers from './ohme_flyers.png'
 
 export const assets = {
     user_image,
@@ -123,7 +131,15 @@ export const assets = {
     pasta,
     bounty,
     cocktails,
-    bari_poster
+    bari_poster,
+    downing,
+    seraca_icons,
+    cat,
+    mental_health_1,
+    mental_health_2,
+    mind_body,
+    wedding_photo,
+    ohme_flyers
 };
 
 export const workData = [
@@ -166,17 +182,21 @@ export const toolsData = [
     assets.vscode, assets.mongodb, assets.figma, assets.git
 ];
 
-export const galleryData = [
-    {
-      imgelink: assets.ohme_brand_mock_ups,
-      title: "Graphic Design",
-      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
-      tags: ["Graphic Design", "Branding"]
-    },
+export const graphicsData = [
     {
       imgelink: assets.taghazout,
       title: "Graphic Design",
       description: "Creative design project inspired by the coastal beauty of Taghazout, Morocco."
+    },
+    {
+      imgelink: assets.ohme_flyers,
+      title: "Graphic Design",
+      description: "Curated collection of custom icons designed for various digital and print applications."
+    },
+    {
+      imgelink: assets.icons,
+      title: "Graphic Design",
+      description: "Curated collection of custom icons designed for various digital and print applications."
     },
     {
       imgelink: assets.taghazout2,
@@ -184,7 +204,22 @@ export const galleryData = [
       description: "Extended series exploring visual narratives of the Moroccan surf town through design."
     },
     {
+      imgelink: assets.locus,
+      title: "Graphic Design",
+      description: "Location-based design project exploring spatial relationships through visual communication."
+    },
+    {
       imgelink: assets.bari_poster,
+      title: "Graphic Design",
+      description: "Extended series exploring visual narratives of the Moroccan surf town through design."
+    },
+    {
+      imgelink: assets.ohme_icons,
+      title: "Graphic Design",
+      description: "Comprehensive icon system designed for digital applications with consistent visual language."
+    },
+    {
+      imgelink: assets.downing,
       title: "Graphic Design",
       description: "Extended series exploring visual narratives of the Moroccan surf town through design."
     },
@@ -199,26 +234,6 @@ export const galleryData = [
       description: "Modern brand identity system designed to elevate business presence and market positioning."
     },
     {
-      imgelink: assets.ohme_icons,
-      title: "Graphic Design",
-      description: "Comprehensive icon system designed for digital applications with consistent visual language."
-    },
-    {
-      imgelink: assets.locus,
-      title: "Graphic Design",
-      description: "Location-based design project exploring spatial relationships through visual communication."
-    },
-    {
-      imgelink: assets.graph,
-      title: "Graphic Design",
-      description: "Custom graph and chart designs that transform complex data into accessible visual stories."
-    },
-    {
-      imgelink: assets.icons,
-      title: "Graphic Design",
-      description: "Curated collection of custom icons designed for various digital and print applications."
-    },
-    {
       imgelink: assets.business_cards,
       title: "Graphic Design",
       description: "Professional business card designs that balance creativity with practical functionality."
@@ -231,3 +246,77 @@ export const galleryData = [
   ];
 
   
+  export const illustrationData = [
+    {
+      imgelink: assets.ohme_brand_mock_ups,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.user_image,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+        {
+      imgelink: assets.mental_health_1,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.ecuador_calendar,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.cocktails,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.saka_kala,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.menus,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.pasta,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.mental_health_2,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.mind_body,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.wedding_photo,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.cat,
+      title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+];
