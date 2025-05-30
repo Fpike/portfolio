@@ -67,7 +67,21 @@ import mental_health_1 from './mental_health_1.png';
 import mental_health_2 from './mental_health_2.png';
 import mind_body from './mind_body.png';
 import wedding_photo from './wedding_photo.png';
-import ohme_flyers from './ohme_flyers.png'
+import ohme_flyers from './ohme_flyers.png';
+import ohme_social from './ohme_social.png';
+import social_media from './social_media.png';
+import downing_ui from './downing_ui.png';
+import flower_app_ui from './flower_app_ui.png';
+import flower_shop_2_ui from './flower_shop_2_ui.png';
+import flower_shop_ui from './flower_shop_ui.png';
+import flower_wireframe_ui from './flower_wireframe_ui.png';
+import makersbnb_ui from './makersbnb_ui.png';
+import mazo_ui from './mazo_ui.png';
+import ohme_home_ui from './ohme_home_ui.png';
+import ohme_shop_ui from './ohme_shop_ui.png';
+import park_charge from './park_charge_ui.png';
+import portal_ui from './portal_ui.png';
+import wedding_ui from './wedding_ui.png';
 
 export const assets = {
     user_image,
@@ -139,7 +153,21 @@ export const assets = {
     mental_health_2,
     mind_body,
     wedding_photo,
-    ohme_flyers
+    ohme_flyers,
+    ohme_social,
+    social_media,
+    downing_ui,
+    flower_app_ui,
+    flower_shop_2_ui,
+    flower_shop_ui,
+    flower_wireframe_ui,
+    makersbnb_ui,
+    mazo_ui,
+    ohme_home_ui,
+    ohme_shop_ui,
+    park_charge,
+    portal_ui,
+    wedding_ui,
 };
 
 export const workData = [
@@ -239,7 +267,7 @@ export const graphicsData = [
       description: "Professional business card designs that balance creativity with practical functionality."
     },
     {
-      imgelink: assets.leaflet,
+      imgelink: assets.social_media,
       title: "Graphic Design",
       description: "Informational leaflet design combining clear hierarchy with engaging visual elements."
     },
@@ -316,6 +344,75 @@ export const graphicsData = [
     {
       imgelink: assets.cat,
       title: "Illustration",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+];
+
+export const UIData = [
+    {
+      imgelink: assets.flower_app_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+        {
+      imgelink: assets.flower_shop_2_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.portal_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.makersbnb_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.downing_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.mazo_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.ohme_home_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.flower_shop_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.ohme_shop_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.flower_wireframe_ui,
+      title: "UI Design",
+      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      tags: ["Graphic Design", "Branding"]
+    },
+    {
+      imgelink: assets.park_charge,
+      title: "UI Design",
       description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
       tags: ["Graphic Design", "Branding"]
     },

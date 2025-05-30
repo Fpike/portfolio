@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className='w-full fixed px-5 lg:px-8 x1:px-[8%] py-4 flex items-center justify-between z-50 '>
         <a href='#top'>
             <Image src={assets.logo} className='w-40 
-            cursor-pointer mr-14' alt="" />
+            cursor-pointer mr-14 rounded' alt="" />
         </a>
         <ul className='hidden md:flex items-center gap-6 lg:gap-8
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>

@@ -57,9 +57,10 @@ const IllustrationGallery = () => {
   };
 
   return (
-    <div className="w-full px-[12%] py-10 scroll-mt-20 pt-16">
+    <div className="w-full px-[12%] scroll-mt-20 py-8 md:py-24 md:pt-24 bg-box">
       <div className="w-full max-w-7xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start gap-8">
+          
           {/* Left side - Featured image aligned with page margin */}
           <div className="w-full lg:w-1/2 flex justify-start">
             <div className="relative h-[450px] w-full max-w-[450px] rounded-xl overflow-hidden">
