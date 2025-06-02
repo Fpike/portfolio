@@ -82,6 +82,21 @@ import ohme_shop_ui from './ohme_shop_ui.png';
 import park_charge from './park_charge_ui.png';
 import portal_ui from './portal_ui.png';
 import wedding_ui from './wedding_ui.png';
+import acebook from './acebook.png';
+import makersbnb_1 from './makersbnb_1.png';
+import makersbnb_2 from './makersbnb_2.png';
+import makersbnb_3 from './makersbnb_3.png';
+import makersbnb_4 from './makersbnb_4.png';
+import makersbnb_5 from './makersbnb_5.png';
+import meanmoney_1 from './meanmoney_1.png';
+import meanmoney_2 from './meanmoney_2.png';
+import meanmoney_3 from './meanmoney_3.png';
+import meanmoney_4 from './meanmoney_4.png';
+import meanmoney_5 from './meanmoney_5.png';
+import roam_1 from './roam_1.png';
+import roam_2 from './roam_2.png';
+import roam_3 from './roam_3.png';
+import roam_4 from './roam_4.png';
 
 export const assets = {
     user_image,
@@ -168,6 +183,21 @@ export const assets = {
     park_charge,
     portal_ui,
     wedding_ui,
+    roam_1,
+    roam_2,
+    roam_3,
+    roam_4,
+    meanmoney_1,
+    meanmoney_2,
+    meanmoney_3,
+    meanmoney_4,
+    meanmoney_5,
+    acebook,
+    makersbnb_1,
+    makersbnb_2,
+    makersbnb_3,
+    makersbnb_4,
+    makersbnb_5,
 };
 
 export const workData = [
@@ -416,4 +446,76 @@ export const UIData = [
       description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
       tags: ["Graphic Design", "Branding"]
     },
+];
+
+export const SoftwareData = [
+  {
+    id: 'roam',
+    title: 'Roam',
+    images: [
+      assets.roam_1,
+      assets.roam_2,
+      assets.roam_3,
+      assets.roam_4,
+    ],
+    technologies: ['JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap', 'HTML', 'CSS', ],
+    description: 'A MERN stack web app where users build travel profiles and document trips with dedicated country-based blogs.',
+    bulletPoints: [
+      'Built secure user authentication and profile customisation with React hooks and JWT.',
+      'Developed a dynamic blog editor for country-based travel stories using React components and structured MongoDB data models.',
+      'Created an interactive favourites system with React state management for quick access to destinations.',
+      'Designed and implemented a component system with custom CSS and Bootstrap, creating a responsive interface without relying on external UI libraries.'
+    ]
+  },
+  {
+    id: 'meanmoney',
+    title: 'Mean Money',
+    images: [
+      assets.meanmoney_1,
+      assets.meanmoney_2,
+      assets.meanmoney_3,
+      assets.meanmoney_4,
+      assets.meanmoney_5,
+    ],
+    technologies: ['JavaScript', 'React', 'HTML', 'CSS',  'Node.js', 'MongoDB', 'Node.js'],
+    description: 'Budgeting site allowing users to track spending and saving goals, and get advice on where to cut back on spending.',
+    bulletPoints: [
+      'Utilised MERN stack for database management, backend logic, and dynamic and responsive UI.',
+      'Implemented savings goal features from backend to frontend, ensuring seamless functionality and display.',
+      'Designed the frontend in Figma and implemented with CSS and Bootstrap for an enhanced user experience.',
+      'Collaborated with Quality Engineers to ensure functionality and accessibility standards were met.'
+    ]
+  },
+  {
+    id: 'makersbnb',
+    title: 'Makersbnb',
+    images: [
+      assets.makersbnb_1,
+      assets.makersbnb_2,
+      assets.makersbnb_3,
+      assets.makersbnb_4,
+      assets.makersbnb_5,
+    ],
+    technologies: ['Python', 'SQL', 'Flask', 'PostgreSQL', 'HTML', 'CSS'],
+    description: 'Project replicating functionalities of Airbnb, enabling users to sign up, manage listings, and book accommodation.',
+    bulletPoints: [
+      'Developed property listing system with booking system and availability checking',
+      'Led frontend development, creating responsive UIs and custom iconography to enhance user experience.',
+      'Developed backend functionality for user sign-up and form validation'
+    ]
+  },
+  {
+    id: 'acebook',
+    title: 'Acebook',
+    images: [
+      assets.acebook,
+    ],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB'],
+    description: "A web app replicating Facebook's core functionalities, allowing users to manage profiles, interact, and upload media.'",
+    bulletPoints: [
+      'Developed backend-to-frontend functionality for profile image uploads using Multer middleware.',
+      'Implemented a "People You May Know" feature to dynamically display suggested users from the database.',
+      'Created responsive design with modern UI/UX principles.'
+    ]
+  }
 ];

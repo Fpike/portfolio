@@ -86,4 +86,7 @@
   h3 {
     @apply text-2xl font-medium;
   }
+  h4 {
+    @apply text-xl font-medium;
+  }
 }

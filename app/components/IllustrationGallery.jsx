@@ -57,7 +57,7 @@ const IllustrationGallery = () => {
   };
 
   return (
-    <div className="w-full px-[12%] scroll-mt-20 py-8 md:py-24 md:pt-24 bg-box">
+    <div id="illustration" className="w-full px-[12%] scroll-mt-20 py-8 md:py-24 md:pt-24 bg-box">
       <div className="w-full max-w-7xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start gap-8">
           
@@ -82,7 +82,7 @@ const IllustrationGallery = () => {
           </div>
 
           {/* Right side - Title, description, and thumbnails */}
-          <div id="illustration" className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div className="lg:sticky lg:top-32">
               <h3>
                 {activeItem.title}
