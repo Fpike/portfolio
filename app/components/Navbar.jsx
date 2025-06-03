@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
 {/* mobile menu */}
-        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0
+        <ul ref={sideMenuRef} className='translate-x-full flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0
         w-64 z-50 h-screen bg-[#FEEBEB] transition duration-500'>
             <div className='absolute right-6 top-6' onClick={closeMenu}>
                 <Image src={assets.close_black} alt="" className='w-5 cursor-pointer' />

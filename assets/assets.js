@@ -103,6 +103,7 @@ import logo_white from './logo_white.png';
 import mail_white from './mail_white.svg';
 import portfolio_background from './portfolio-background.png';
 import arrow_white from './arrow_white.svg';
+import arrow_down from './arrow_down.svg';
 
 export const assets = {
     user_image,
@@ -209,7 +210,8 @@ export const assets = {
     logo_white,
     mail_white,
     portfolio_background,
-    arrow_white
+    arrow_white,
+    arrow_down
 };
 
 export const serviceData = [

@@ -5,7 +5,7 @@ import { assets } from '@/assets/assets'
 
 const Header = () => {
   return (
-    <div className='relative w-full h-[600px] flex flex-col justify-center px-4'>
+    <div className='relative w-full h-screen md:h-[650px] flex flex-col justify-center px-4'>
       {/* Background Image */}
       <div className='absolute inset-0 -z-10'>
         <Image
@@ -23,7 +23,7 @@ const Header = () => {
         <h1 className='text-4xl sm:text-6xl lg:text-7xl text-white leading-tight space-y-0'>
           <div className='flex items-center gap-4 mb-2'>
             <span className='font-bold'>Frankie Pike</span>
-            <span className='hidden sm:inline font-light text-stroke'>›››</span>
+            <span className='inline font-light text-stroke'>›››</span>
           </div>
           <div>
             Software <span className='font-light text-stroke'>development</span> &
@@ -36,7 +36,7 @@ const Header = () => {
         <div className='flex flex-wrap gap-4 mt-8'>
           <a
             href="#contact"
-            className='flex items-center gap-2 px-6 py-3 border-2 border-white text-white hover:bg-white hover:bg-opacity-50 hover:text-black rounded-full transition-all duration-300 text-sm font-medium'
+            className='flex items-center gap-2 px-6 py-3 border-2 border-white text-white hover:bg-white hover:bg-opacity-50 rounded-full transition-all duration-300 text-sm font-medium'
           >
             Work with me
           </a>
@@ -44,7 +44,7 @@ const Header = () => {
             href="https://www.linkedin.com/in/frankie-pike-198253198"
             target="_blank"
             rel="noopener noreferrer"
-            className='flex items-center gap-2 px-6 py-3 border-2 border-white text-white hover:bg-white hover:bg-opacity-50 hover:text-black rounded-full transition-all duration-300 text-sm font-medium'
+            className='flex items-center gap-2 px-6 py-3 border-2 border-white text-white hover:bg-white hover:bg-opacity-50 rounded-full transition-all duration-300 text-sm font-medium'
           >
             Connect with me
             <Image
@@ -58,6 +58,19 @@ const Header = () => {
         </div>
 
       </div>
+
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+        <a href="#about">
+          <Image
+            src={assets.arrow_down}
+            alt="Scroll Down"
+            width={32}
+            height={32}
+            className="animate-bounce cursor-pointer"
+          />
+        </a>
+      </div>
+      
     </div>
   )
 }
