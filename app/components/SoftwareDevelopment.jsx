@@ -110,14 +110,13 @@ const SoftwareDevelopment = () => {
                     <div className="lg:w-3/5">
                         {/* Main Image */}
                         <div className="relative mb-4">
-                            <div className="relative border h-80 bg-gray-100 rounded-xl overflow-hidden">
+                            <div className="relative bg-gray-100 border rounded-xl overflow-hidden h-48 md:h-80 w-full">
                                 <Image
                                     src={currentProject.images[activeImageIndex]}
                                     alt={`${currentProject.title} screenshot ${activeImageIndex + 1}`}
                                     fill
                                     className="object-cover"
                                 />
-
 
                                 {/* Navigation arrows */}
                                 {currentProject.images.length > 1 && (

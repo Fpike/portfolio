@@ -26,7 +26,7 @@ const Navbar = () => {
         </a>
         <ul className='hidden md:flex items-center gap-6 lg:gap-8
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>
-            <li><a href='#top'>About</a></li>
+            <li><a href='#about'>About</a></li>
             <li><a href='#software'>Software Development</a></li>
             <li><a href='#graphic'>Graphic Design</a></li>
             <li><a href='#ui'>UI Design</a></li>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className='absolute right-6 top-6' onClick={closeMenu}>
                 <Image src={assets.close_black} alt="" className='w-5 cursor-pointer' />
             </div>
-            <li><a onClick={closeMenu} href='#top'>About</a></li>
+            <li><a onClick={closeMenu} href='#about'>About</a></li>
             <li><a onClick={closeMenu} href='#software'>Software Development</a></li>
             <li><a onClick={closeMenu} href='#graphic'>Graphic Design</a></li>
             <li><a onClick={closeMenu} href='#illustration'>Illustration</a></li>

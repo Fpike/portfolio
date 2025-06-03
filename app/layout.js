@@ -1,4 +1,5 @@
 import { DM_Sans, } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -10,6 +11,9 @@ const dmSans = DM_Sans({
 export const metadata = {
   title: "Frankie Pike",
   description: "Full-stack Software Developer and Graphic & UI Designer",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export const viewport = {
@@ -20,6 +24,9 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <Head>
+        <link rel="icon" href="/favicon.svg"/>
+      </Head>
       <body
         className={`${dmSans.className} antialiased overflow-x-hidden`}
       >

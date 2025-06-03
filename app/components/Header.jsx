@@ -26,7 +26,7 @@ const Header = () => {
             <span className='inline font-light text-stroke'>›››</span>
           </div>
           <div>
-            Software <span className='font-light text-stroke'>development</span> &
+            Software <span className='font-light text-stroke'>development</span> <span className="ipadpro:hidden">&</span>
           </div>
           <div>
             <span className='font-light italic'>Graphic</span> and <span className='font-light italic'>UI</span> <span>Design.</span>

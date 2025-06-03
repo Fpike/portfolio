@@ -56,59 +56,46 @@ const GraphicsGallery = () => {
     setIsAutoScrolling(!isAutoScrolling);
   };
 
-  {/* Conditional tags - only show if specified in GraphicsData */ }
-  {
-    (activeItem.tags && activeItem.tags.length > 0) && (
-      <div className="flex flex-wrap gap-2 mb-8">
-        {activeItem.tags.includes('Graphic Design') && (
-          <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-            Graphic Design
-          </span>
-        )}
-        {activeItem.tags.includes('Branding') && (
-          <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-            Branding
-          </span>
-        )}
-        {activeItem.tags.includes('Illustration') && (
-          <span className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-medium">
-            Illustration
-          </span>
-        )}
-      </div>
-    )
-  }
-
   return (
     <div id="graphic" className="w-full px-[12%] bg-box scroll-mt-20 py-8 md:py-24 md:pt-24">
       <div className="w-full max-w-7xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start gap-8">
-          {/* Left side - Featured image aligned with page margin */}
-          <div className="w-full lg:w-1/2 flex justify-start">
-            <div className="relative h-[450px] w-full max-w-[450px] rounded-xl overflow-hidden">
+          {/* Mobile title - only visible on mobile, positioned above image */}
+          <div className="w-full lg:hidden order-1">
+            <h3>
+              {activeItem.title}
+            </h3>
+          </div>
+
+          {/* Left side - Featured image */}
+          <div className="w-full lg:w-1/2 flex justify-start order-2 lg:order-1">
+            <div className="relative h-[294.81px] lg:h-[450px] w-full max-w-[450px] rounded-xl overflow-hidden">
               <Image
                 src={getSrc(activeItem.imgelink)}
                 alt={activeItem.title}
                 width={0}
-                height={450}
+                height={0}
                 style={{
                   width: "100%",
-                  height: "450px",
+                  height: "294.81px",
                   maxWidth: "100%",
                   objectFit: "contain"
                 }}
+                className="lg:!h-[450px]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
             </div>
           </div>
 
-          {/* Right side - Title, description, and thumbnails */}
-          <div className="w-full lg:w-1/2">
+          {/* Right side content - reordered for mobile */}
+          <div className="w-full lg:w-1/2 order-3 lg:order-2">
             <div className="lg:sticky lg:top-32">
-              <h3>
+              {/* Desktop title - hidden on mobile */}
+              <h3 className="hidden lg:block">
                 {activeItem.title}
               </h3>
+              
               <p className="text-gray-600 leading-relaxed mb-8 md:pt-8">
                 {activeItem.description}
               </p>
@@ -131,7 +118,6 @@ const GraphicsGallery = () => {
                       Illustration
                     </span>
                   )}
-
                 </div>
               )}
 
@@ -155,7 +141,7 @@ const GraphicsGallery = () => {
                 </span>
               </div>
 
-              {/* Thumbnail grid - moved here */}
+              {/* Thumbnail grid */}
               <div className="mt-4">
                 <div className="grid grid-cols-6 gap-3">
                   {graphicsData.map((item, index) => (

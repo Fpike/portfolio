@@ -52,13 +52,49 @@ const UIGallery = () => {
     setActiveIndex(index);
   };
 
+  // Navigation functions for buttons
+  const navigateImage = (direction) => {
+    setIsAutoScrolling(false);
+    if (direction === 'prev') {
+      setActiveIndex(prev =>
+        prev === 0 ? UIData.length - 1 : prev - 1
+      );
+    } else {
+      setActiveIndex(prev =>
+        prev === UIData.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
   return (
-    <div id="ui" className="w-full px-[12%] md:py-10 scroll-mt-20 md:pt-16">
+    <div id="ui" className="w-full px-[12%] py-8 md:py-10 scroll-mt-20 md:pt-16">
       <div className="w-full max-w-7xl mx-auto md:px-4">
+
+        {/* Content section - two columns with divider */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-2 relative">
+          {/* Left column - Title (1/5 width) */}
+          <div className="flex flex-col lg:w-1/5">
+            <h3 className="text-gray-900">
+              {activeItem.title}
+            </h3>
+            
+            {/* Conditional tags */}
+          </div>
+
+          {/* Right column - Description (4/5 width) */}
+          <div className="flex flex-col lg:w-4/5 lg:pl-8 relative">
+            {/* Vertical divider - positioned relative to this column */}
+            <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-gray-200"></div>
+            
+            <p className="text-gray-600 leading-relaxed text-base pb-8 md:pb-0">
+              {activeItem.description}
+            </p>
+          </div>
+        </div>
         
         {/* Main image - full width */}
-        <div className="w-full md:mb-8">
-          <div className="relative h-[400px] rounded-xl overflow-hidden">
+        <div className="w-full md:mb-8 md:pt-8 relative">
+          <div className="relative w-full aspect-[16/9] md:h-[400px] rounded-xl overflow-hidden">
             <Image
               src={getSrc(activeItem.imgelink)}
               alt={activeItem.title}
@@ -71,28 +107,30 @@ const UIGallery = () => {
               quality={95}
               unoptimized={false}
             />
-          </div>
-        </div>
 
-        {/* Content section - two columns with divider */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-2 relative">
-          {/* Left column - Title (1/5 width) */}
-          <div className="flex flex-col lg:w-1/5">
-            <h3 className="text-gray-900 mb-4">
-              {activeItem.title}
-            </h3>
-            
-            {/* Conditional tags */}
-          </div>
-
-          {/* Right column - Description (4/5 width) */}
-          <div className="flex flex-col lg:w-4/5 lg:pl-8 relative">
-            {/* Vertical divider - positioned relative to this column */}
-            <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-gray-200"></div>
-            
-            <p className="text-gray-600 leading-relaxed text-base">
-              {activeItem.description}
-            </p>
+            {/* Navigation arrows */}
+            {UIData.length > 1 && (
+              <>
+                <button
+                  onClick={() => navigateImage('prev')}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => navigateImage('next')}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all"
+                  aria-label="Next image"
+                >
+                  <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </>
+            )}
           </div>
         </div>
 
@@ -111,7 +149,7 @@ const UIGallery = () => {
                 />
               ))}
             </div>
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 pt-2">
               {activeIndex + 1} / {UIData.length}
             </span>
             <span className="text-xs text-gray-400 hidden md:inline">

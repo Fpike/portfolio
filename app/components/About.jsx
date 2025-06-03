@@ -7,7 +7,7 @@ const About = () => {
         // <div id='about' className='w-11/12 max-w-3x1 text-center mx-auto h-screen flex flex-col 
         // items-center justify-center gap-4'>
         <div id='about' className='w-full px-[12%] py-10 scroll-mt-20 bg-box'>
-            <div className='flex  w-full flex-col lg:flex-row items-center gap-20 my-12'>
+            <div className='flex  w-full flex-col lg:flex-row items-center gap-8 my-12'>
                 <div className='w-64 sm:w-80 rounded-3x1 '>
                     <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
                 </div>

@@ -31,8 +31,8 @@ const Contact = () => {
 
   return (
     <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
-      <h2 className='text-center mb-2'>Contact me</h2>
-      <p className='text-center max-w-2x1 mx-auto mt-5 mb-12'>Please reach out directly with questions or opportunities.</p>
+      <h3 className='text-center mb-2'>Contact me</h3>
+      <p className='text-center max-w-2x1 mx-auto mt-5 mb-12'>Please reach out to me with questions or opportunities!</p>
     
     <form onSubmit={onSubmit} className='max-w-2x1 mx-auto'>
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
