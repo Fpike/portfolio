@@ -1,6 +1,7 @@
 import { DM_Sans, } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const dmSans = DM_Sans({
   variable: '--font-dm-sans',
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         className={`${dmSans.className} antialiased overflow-x-hidden`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
