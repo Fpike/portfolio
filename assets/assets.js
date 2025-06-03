@@ -409,22 +409,22 @@ export const UIData = [
     {
       imgelink: assets.mazo_ui,
       title: "UI Design",
-      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      description: "Homepage design for Màzo, a luxury candle brand, featuring four signature scents, each highlighted with distinct visual themes to reflect their fragrance profiles.",
     },
     {
       imgelink: assets.ohme_home_ui,
       title: "UI Design",
-      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      description: "Homepage header design for Ohme, an EV charger company, showcasing the smart mobile app’s opening screen.",
     },
     {
       imgelink: assets.flower_shop_ui,
       title: "UI Design",
-      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      description: "User interface designs for a flower delivery app, created in Figma to showcase layout, branding, and user experience elements.",
     },
     {
       imgelink: assets.ohme_shop_ui,
       title: "UI Design",
-      description: "Complete brand identity mockups showcasing logo applications across various touchpoints and materials.",
+      description: "Shop page design for Ohme, displaying the available charger types with hover interactions that reveal key differences between each variation.",
     },
     {
       imgelink: assets.flower_wireframe_ui,
@@ -442,6 +442,7 @@ export const SoftwareData = [
     {
     id: 'meanmoney',
     title: 'Mean Money',
+    githubUrl: 'https://github.com/pat-shannon/mean-money',
     images: [
       assets.meanmoney_1,
       assets.meanmoney_2,
@@ -461,6 +462,7 @@ export const SoftwareData = [
   {
     id: 'roam',
     title: 'Roam',
+    githubUrl: 'https://github.com/Fpike/roam',
     images: [
       assets.roam_1,
       assets.roam_2,
@@ -479,6 +481,7 @@ export const SoftwareData = [
   {
     id: 'makersbnb',
     title: 'Makersbnb',
+    githubUrl: 'https://github.com/NaomiCSmith/byte_brigade_makersbnb',
     images: [
       assets.makersbnb_1,
       assets.makersbnb_2,
@@ -497,6 +500,7 @@ export const SoftwareData = [
   {
     id: 'acebook',
     title: 'Acebook',
+    githubUrl: 'https://github.com/RussellColes/acebook-teamM',
     images: [
       assets.acebook,
     ],

@@ -5,7 +5,7 @@ import { assets } from '@/assets/assets'
 
 const Header = () => {
   return (
-    <div className='relative w-full h-[500px] flex flex-col justify-center px-4'>
+    <div className='relative w-full h-[600px] flex flex-col justify-center px-4'>
       {/* Background Image */}
       <div className='absolute inset-0 -z-10'>
         <Image
@@ -16,9 +16,9 @@ const Header = () => {
           priority
         />
       </div>
-      
+
       {/* Content */}
-      <div className='w-full px-[12%]'>
+      <div className='w-full px-[12%] mt-8'>
         {/* Name and Chevrons */}
         <h1 className='text-4xl sm:text-6xl lg:text-7xl text-white leading-tight space-y-0'>
           <div className='flex items-center gap-4 mb-2'>
@@ -32,6 +32,31 @@ const Header = () => {
             <span className='font-light italic'>Graphic</span> and <span className='font-light italic'>UI</span> <span>Design.</span>
           </div>
         </h1>
+
+        <div className='flex flex-wrap gap-4 mt-8'>
+          <a
+            href="#contact"
+            className='flex items-center gap-2 px-6 py-3 border-2 border-white text-white hover:bg-white hover:bg-opacity-50 hover:text-black rounded-full transition-all duration-300 text-sm font-medium'
+          >
+            Work with me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/frankie-pike-198253198"
+            target="_blank"
+            rel="noopener noreferrer"
+            className='flex items-center gap-2 px-6 py-3 border-2 border-white text-white hover:bg-white hover:bg-opacity-50 hover:text-black rounded-full transition-all duration-300 text-sm font-medium'
+          >
+            Connect with me
+            <Image
+              src={assets.arrow_white}
+              alt="External link"
+              width={16}
+              height={16}
+              className='opacity-70'
+            />
+          </a>
+        </div>
+
       </div>
     </div>
   )

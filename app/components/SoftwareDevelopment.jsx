@@ -90,8 +90,8 @@ const SoftwareDevelopment = () => {
                                 key={project.id}
                                 onClick={() => handleProjectChange(project.id)}
                                 className={`px-6 py-2 rounded-full transition-all duration-200 ${activeProject === project.id
-                                        ? 'bg-greenCustom text-white shadow-sm'
-                                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                    ? 'bg-greenCustom text-white shadow-sm'
+                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                     }`}
                             >
                                 {project.title}
@@ -174,9 +174,28 @@ const SoftwareDevelopment = () => {
                         </div>
 
                         {/* Title */}
-                        <h4>
-                            {currentProject.title}
-                        </h4>
+                        <div className="flex items-center justify-between mb-4">
+                            <h4>
+                                {currentProject.title}
+                            </h4>
+                            {currentProject.githubUrl && (
+                                <a
+                                    href={currentProject.githubUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors text-sm text-gray-700"
+                                >
+                                    GitHub
+                                    <Image
+                                        src={assets.arrow_icon}
+                                        alt="External link"
+                                        width={16}
+                                        height={16}
+                                        className="opacity-70"
+                                    />
+                                </a>
+                            )}
+                        </div>
 
                         {/* Description */}
                         <p className="text-gray-600 leading-relaxed mb-6">
