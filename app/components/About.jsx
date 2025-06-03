@@ -28,7 +28,7 @@ const About = () => {
                     <ul className='flex items-center gap-3 sm:gap-5 my-6'>
                         {toolsData.map((tool, index) => (
                             <li key={index}>
-                                <Image src={tool} alt='Tool' className='w-5 sm:w-7 hover:-translate-y-1 duration-500' />
+                                <Image src={tool} alt='Tool' className='w-9 sm:w-7 hover:-translate-y-1 duration-500' />
                             </li>
                         ))}
                     </ul>
@@ -38,7 +38,7 @@ const About = () => {
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'
                                 key={index}>
                                 <Image src={icon} alt={title} className='w-5 mt-3' />
-                                <h4 className='my-4 font-semibold text-gray-700'>{title}</h4>
+                                <h4 className='my-2 font-semibold text-gray-700'>{title}</h4>
                                 <p>{description}</p>
                             </li>
                         ))}
