@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { assets, gr, graphicsData } from "@/assets/assets";
 
-const IllustrationGallery = () => {
+const GraphicsGallery = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = React.useState(true);
-  
+
   const activeItem = graphicsData[activeIndex];
 
   const getSrc = (img) => (typeof img === "string" ? img : img.src);
@@ -15,7 +15,7 @@ const IllustrationGallery = () => {
     if (!isAutoScrolling) return;
 
     const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => 
+      setActiveIndex((prevIndex) =>
         prevIndex === graphicsData.length - 1 ? 0 : prevIndex + 1
       );
     }, 7500); // 7.5 seconds
@@ -29,13 +29,13 @@ const IllustrationGallery = () => {
       if (event.key === 'ArrowLeft') {
         event.preventDefault();
         setIsAutoScrolling(false); // Stop auto-scroll when user manually navigates
-        setActiveIndex((prevIndex) => 
+        setActiveIndex((prevIndex) =>
           prevIndex === 0 ? graphicsData.length - 1 : prevIndex - 1
         );
       } else if (event.key === 'ArrowRight') {
         event.preventDefault();
         setIsAutoScrolling(false); // Stop auto-scroll when user manually navigates
-        setActiveIndex((prevIndex) => 
+        setActiveIndex((prevIndex) =>
           prevIndex === graphicsData.length - 1 ? 0 : prevIndex + 1
         );
       }
@@ -55,6 +55,29 @@ const IllustrationGallery = () => {
   const toggleAutoScroll = () => {
     setIsAutoScrolling(!isAutoScrolling);
   };
+
+  {/* Conditional tags - only show if specified in GraphicsData */ }
+  {
+    (activeItem.tags && activeItem.tags.length > 0) && (
+      <div className="flex flex-wrap gap-2 mb-8">
+        {activeItem.tags.includes('Graphic Design') && (
+          <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+            Graphic Design
+          </span>
+        )}
+        {activeItem.tags.includes('Branding') && (
+          <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+            Branding
+          </span>
+        )}
+        {activeItem.tags.includes('Illustration') && (
+          <span className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-medium">
+            Illustration
+          </span>
+        )}
+      </div>
+    )
+  }
 
   return (
     <div id="graphic" className="w-full px-[12%] bg-box scroll-mt-20 py-8 md:py-24 md:pt-24">
@@ -89,7 +112,7 @@ const IllustrationGallery = () => {
               <p className="text-gray-600 leading-relaxed mb-8 md:pt-8">
                 {activeItem.description}
               </p>
-              
+
               {/* Conditional tags - only show if specified in graphicsData */}
               {(activeItem.tags && activeItem.tags.length > 0) && (
                 <div className="flex flex-wrap gap-2 mb-8">
@@ -103,6 +126,12 @@ const IllustrationGallery = () => {
                       Branding
                     </span>
                   )}
+                  {activeItem.tags.includes('Illustration') && (
+                    <span className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-medium">
+                      Illustration
+                    </span>
+                  )}
+
                 </div>
               )}
 
@@ -112,9 +141,8 @@ const IllustrationGallery = () => {
                   {graphicsData.map((_, index) => (
                     <div
                       key={index}
-                      className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${
-                        activeIndex === index ? 'bg-greenCustom' : 'bg-gray-300'
-                      }`}
+                      className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${activeIndex === index ? 'bg-greenCustom' : 'bg-gray-300'
+                        }`}
                       onClick={() => handleThumbnailClick(index)}
                     />
                   ))}
@@ -133,11 +161,10 @@ const IllustrationGallery = () => {
                   {graphicsData.map((item, index) => (
                     <div key={index} className="aspect-square">
                       <div
-                        className={`relative w-full h-full cursor-pointer rounded-lg overflow-hidden transition-all duration-200 ${
-                          activeIndex === index
+                        className={`relative w-full h-full cursor-pointer rounded-lg overflow-hidden transition-all duration-200 ${activeIndex === index
                             ? 'ring-2 ring-blue-500 hover:opacity-75'
                             : 'hover:opacity-75'
-                        }`}
+                          }`}
                         onClick={() => handleThumbnailClick(index)}
                       >
                         <Image
@@ -162,4 +189,4 @@ const IllustrationGallery = () => {
   );
 };
 
-export default IllustrationGallery;
+export default GraphicsGallery;

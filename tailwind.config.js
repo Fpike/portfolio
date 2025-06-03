@@ -10,7 +10,7 @@ module.exports = {
   theme: {
   	extend: {
   		colors: {
-  			box: '#F8F6F6',
+  			box: '#F6F7F8',
 			greenCustom: '#4C9C81',
   			lightHover: '#FFFBFB',
   			darkHover: '#0046af',

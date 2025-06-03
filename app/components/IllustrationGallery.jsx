@@ -104,6 +104,11 @@ const IllustrationGallery = () => {
                       Branding
                     </span>
                   )}
+                  {activeItem.tags.includes('Illustration') && (
+                    <span className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-medium">
+                      Illustration
+                    </span>
+                  )}
                 </div>
               )}
 

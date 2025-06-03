@@ -30,7 +30,7 @@ const TechnologyTag = ({ tech, isActive }) => {
 };
 
 const SoftwareDevelopment = () => {
-    const [activeProject, setActiveProject] = useState('roam');
+    const [activeProject, setActiveProject] = useState('meanmoney');
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
     const currentProject = SoftwareData.find(project => project.id === activeProject);
@@ -77,7 +77,7 @@ const SoftwareDevelopment = () => {
                     <div className="lg:w-4/5 lg:pl-8 relative">
                         <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-gray-200"></div>
                         <p className="text-gray-600 leading-relaxed">
-                            Full-stack developmer with experience building robust web apps using a wide range of technologies including JavaScript, Python, and React. Proficient in HTML and CSS, with hands-on experience with state management, component reusability, and API integration.
+                            Full-stack developer with experience building robust web apps using a wide range of technologies including JavaScript, Python, and React. Proficient in HTML and CSS, with hands-on experience with state management, component reusability, and API integration.
                         </p>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ const SoftwareDevelopment = () => {
                 {/* Main Content */}
                 <div className="flex flex-col lg:flex-row gap-8">
 
-                    {/* Left Column - Images (3/5 width) */}
+                    {/* Left Column */}
                     <div className="lg:w-3/5">
                         {/* Main Image */}
                         <div className="relative mb-4">
@@ -119,7 +119,7 @@ const SoftwareDevelopment = () => {
                                 />
 
 
-                                {/* Navigation arrows for multiple images */}
+                                {/* Navigation arrows */}
                                 {currentProject.images.length > 1 && (
                                     <>
                                         <button
@@ -143,7 +143,7 @@ const SoftwareDevelopment = () => {
                             </div>
                         </div>
 
-                        {/* Image Navigation Indicators */}
+                        {/* Navigation Indicators */}
                         {currentProject.images.length > 1 && (
                             <div className="flex justify-center gap-2">
                                 {currentProject.images.map((_, index) => (
@@ -161,7 +161,7 @@ const SoftwareDevelopment = () => {
                         )}
                     </div>
 
-                    {/* Right Column - Project Details (2/5 width) */}
+                    {/* Right Column */}
                     <div className="lg:w-2/5">
 
                         {/* Technologies */}
@@ -173,17 +173,17 @@ const SoftwareDevelopment = () => {
                             </div>
                         </div>
 
-                        {/* Project Title */}
+                        {/* Title */}
                         <h4>
                             {currentProject.title}
                         </h4>
 
-                        {/* Project Description */}
+                        {/* Description */}
                         <p className="text-gray-600 leading-relaxed mb-6">
                             {currentProject.description}
                         </p>
 
-                        {/* Bullet Points */}
+                        {/* Bullets */}
                         <ul className="space-y-3">
                             {currentProject.bulletPoints.map((point, index) => (
                                 <li key={index} className="flex items-start">

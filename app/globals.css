@@ -90,3 +90,9 @@
     @apply text-xl font-medium;
   }
 }
+
+.text-stroke {
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

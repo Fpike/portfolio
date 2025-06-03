@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 import IllustrationGallery from "./components/IllustrationGallery"
 import UIGallery from "./components/UIGallery";
 import SoftwareDevelopment from "./components/SoftwareDevelopment";
+import Header from "./components/Header";
 
 
 export default function Home() {
   return (
     <>
     <Navbar />
+    <Header />
     <About />
     <SoftwareDevelopment />
     <GraphicsGallery />
