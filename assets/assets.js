@@ -220,9 +220,9 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React, Python, Next.js' },
-    { icon: assets.software_icon, iconDark: assets.edu_icon_dark, title: 'Design Software', description: 'Adobe Creative Suite, Figma' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Illustration BA Hons, Mathematics A-Level' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript | React | Python | Next.js' },
+    { icon: assets.software_icon, iconDark: assets.edu_icon_dark, title: 'Design Software', description: 'Adobe Creative Suite | Figma' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Illustration BA Hons | Mathematics A-Level' }
 ];
 
 export const toolsData = [
