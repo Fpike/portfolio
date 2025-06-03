@@ -5,7 +5,7 @@ import { assets } from '@/assets/assets'
 
 const Header = () => {
   return (
-    <div className='relative w-full h-screen md:h-[650px] flex flex-col justify-center px-4'>
+    <div className='relative w-full min-h-[100dvh] md:h-[650px] flex flex-col justify-center px-4'>
       {/* Background Image */}
       <div className='absolute inset-0 -z-10'>
         <Image
