@@ -106,6 +106,8 @@ import arrow_white from './arrow_white.svg';
 import arrow_down from './arrow_down.svg';
 import favicon from './favicon.svg';
 import about_image from './about_image.png';
+import github from './github.png';
+import cross from './cross.svg';
 
 export const assets = {
     user_image,
@@ -215,7 +217,9 @@ export const assets = {
     arrow_white,
     arrow_down,
     favicon,
-    about_image
+    about_image,
+    github,
+    cross
 };
 
 export const serviceData = [
@@ -226,7 +230,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript | React | Python | SQL | Next.js | HTML | CSS' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Development', description: 'JavaScript | React | Python | SQL | Next.js | HTML | CSS' },
     { icon: assets.software_icon, iconDark: assets.edu_icon_dark, title: 'Design Software', description: 'Adobe Creative Suite | Figma' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Makers Academy Software Engineering Bootcamp | Illustration BA Hons' }
 ];

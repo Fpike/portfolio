@@ -17,7 +17,7 @@ const About = () => {
 </div>
                 <div className='flex-1'>
                     <h2 className='max-w-2x1 hidden sm:block'>
-                        Hello!
+                        Hello! 
                     </h2>
                     <p className='mb-4 max-w-2x1 mt-4'>
                         <span className='sm:hidden'>Hello! </span><span>I'm Frankie, a recent Software Engineering bootcamp graduate with a strong foundation in full-stack

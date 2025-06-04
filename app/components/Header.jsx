@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
@@ -17,6 +16,13 @@ const Header = () => {
         />
       </div>
 
+      {/* Site Built By Me Button - Desktop Only */}
+      <div className='hidden md:block absolute bottom-6 right-6 z-10'>
+        <div className='flex items-center gap-2 px-4 py-2 bg-white bg-opacity-30 rounded-full shadow-sm'>
+          <span className='text-sm font-medium text-white'>Built by me</span>
+        </div>
+      </div>
+       
       {/* Content */}
       <div className='w-full px-[12%] mt-8'>
         {/* Name and Chevrons */}
@@ -56,7 +62,7 @@ const Header = () => {
             />
           </a>
         </div>
-
+                
       </div>
 
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
@@ -70,7 +76,7 @@ const Header = () => {
           />
         </a>
       </div>
-      
+           
     </div>
   )
 }
