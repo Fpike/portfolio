@@ -42,9 +42,9 @@ const Contact = () => {
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name="email"></input>
         </div>
         <textarea rows='6' placeholder='Enter your message' required className='w-full p-4  outline-none
-        border-[0.5px] border-gray-400 rounded-md bg-white mb-6'></textarea>
+        border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name="message"></textarea>
         <button type='submit' className='py-3 px-8 w-max flex items-center justify-between
-        gap-2 bg-greenCustom text-white rounded-full mx-auto hover:bg-black duration-500' name="message">
+        gap-2 bg-greenCustom text-white rounded-full mx-auto hover:bg-black duration-500'>
             Submit
             <Image src={assets.right_arrow_white} alt='' className='w-4'/></button>
             <p className='mt-4'>{result}</p>

@@ -8,14 +8,21 @@ const About = () => {
         // items-center justify-center gap-4'>
         <div id='about' className='w-full px-[12%] py-10 scroll-mt-20 bg-box'>
             <div className='flex  w-full flex-col lg:flex-row items-center gap-8 my-12'>
-                <div className='w-64 sm:w-80 rounded-3x1 '>
-                    <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
-                </div>
+                <div className='w-64 sm:w-80 aspect-square sm:aspect-auto rounded-3xl overflow-hidden'>
+  <Image
+    src={assets.about_image}
+    alt='user'
+    className='w-full h-full object-cover rounded-3xl'
+  />
+</div>
                 <div className='flex-1'>
+                    <h2 className='max-w-2x1 hidden sm:block'>
+                        Hello!
+                    </h2>
                     <p className='mb-4 max-w-2x1 mt-4'>
-                        Hello! I'm a recent Software Engineering bootcamp graduate with a strong foundation in full-stack
+                        <span className='sm:hidden'>Hello! </span><span>I'm Frankie, a recent Software Engineering bootcamp graduate with a strong foundation in full-stack
                         development. With 7+ years as a Designer, I bring expertise in UI design,
-                        website management, and user-focused problem-solving.
+                        website management, and user-focused problem-solving.</span>
                     </p>
                     <div className="flex gap-4 mb-4">
                         <a href="/Francesca-Pike-Designer.pdf" target="_blank" rel="noopener noreferrer" className="underline cursor-pointer">
@@ -34,11 +41,12 @@ const About = () => {
                     </ul>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2x1'>
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
-                            <li className='bg-white rounded-xl p-6 
+                            <li className='bg-white rounded-xl p-5 
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'
                                 key={index}>
-                                <Image src={icon} alt={title} className='w-5 mt-3' />
-                                <h4 className='my-2 font-semibold text-gray-700'>{title}</h4>
+                                    <div className='flex gap-2 pb-2'><Image src={icon} alt={title} className='w-5 h-5'/>
+                                <p className='font-semibold text-gray-800'>{title}</p></div>
+                                
                                 <p>{description}</p>
                             </li>
                         ))}
