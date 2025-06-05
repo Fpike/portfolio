@@ -17,6 +17,29 @@ export const metadata = {
   },
 };
 
+export async function generateMetadata() {
+  return {
+    title: "Frankie Pike",
+    description: "Full-stack Software Developer and Graphic & UI Designer",
+    openGraph: {
+      title: "Frankie Pike",
+      description: "Full-stack Software Developer and Graphic & UI Designer",
+      url: "https://www.frankie-pike.com",
+      siteName: "Frankie Pike",
+      images: [
+        {
+          url: "https://www.frankie-pike.com/frankie_pike.png",
+          width: 1200,
+          height: 630,
+          alt: "Frankie Pike Portfolio Preview",
+        },
+      ],
+      type: "website",
+    },
+  };
+}
+
+
 export const viewport = {
   width: "device-width",
   initialScale: 1,
