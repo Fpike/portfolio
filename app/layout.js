@@ -9,18 +9,14 @@ const dmSans = DM_Sans({
   weight: ['400', '500', '600', '700']
 })
 
-export const metadata = {
-  title: "Frankie Pike",
-  description: "Full-stack Software Developer and Graphic & UI Designer",
-  icons: {
-    icon: '/favicon.svg',
-  },
-};
 
 export async function generateMetadata() {
   return {
     title: "Frankie Pike",
     description: "Full-stack Software Developer and Graphic & UI Designer",
+    icons: {
+      icon: '/favicon.svg',
+    },
     openGraph: {
       title: "Frankie Pike",
       description: "Full-stack Software Developer and Graphic & UI Designer",
@@ -49,7 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <Head>
-        <link rel="icon" href="/favicon.svg"/>
+        <link rel="icon" href="/favicon.svg" />
         <meta property="og:title" content="Frankie Pike"></meta>
       </Head>
       <body
