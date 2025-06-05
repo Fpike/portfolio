@@ -136,7 +136,7 @@ const GraphicsGallery = () => {
                 <span className="text-sm text-gray-500">
                   {activeIndex + 1} / {graphicsData.length}
                 </span>
-                <span className="text-xs text-gray-400">
+                <span className="text-xs text-gray-800">
                   Use ← → arrow keys to navigate
                 </span>
               </div>

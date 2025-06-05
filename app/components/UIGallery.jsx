@@ -152,7 +152,7 @@ const UIGallery = () => {
             <span className="text-sm text-gray-500 pt-2">
               {activeIndex + 1} / {UIData.length}
             </span>
-            <span className="text-xs text-gray-400 hidden md:inline">
+            <span className="text-xs text-gray-800 hidden md:inline">
               Use ← → arrow keys to navigate
             </span>
           </div>
