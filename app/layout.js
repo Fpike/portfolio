@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <Head>
         <link rel="icon" href="/favicon.svg"/>
+        <meta property="og:title" content="Frankie Pike"></meta>
       </Head>
       <body
         className={`${dmSans.className} antialiased overflow-x-hidden`}

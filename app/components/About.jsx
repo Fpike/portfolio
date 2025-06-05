@@ -41,7 +41,7 @@ const About = () => {
                     </ul>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2x1'>
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
-                            <li className='bg-white rounded-xl p-5 
+                            <li role="button" className='bg-white rounded-xl p-5 
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'
                                 key={index}>
                                     <div className='flex gap-2 pb-2'><Image src={icon} alt={title} className='w-5 h-5'/>

@@ -204,7 +204,7 @@ const SoftwareDevelopment = () => {
                         {/* Bullets */}
                         <ul className="space-y-3">
                             {currentProject.bulletPoints.map((point, index) => (
-                                <li key={index} className="flex items-start">
+                                <li   key={index} className="flex items-start">
                                     <span className="w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                     <span className="text-gray-600 text-sm leading-relaxed">{point}</span>
                                 </li>
