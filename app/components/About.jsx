@@ -21,7 +21,7 @@ const About = () => {
                     </h2>
                     <p className='mb-4 max-w-2x1 mt-4'>
                         <span className='sm:hidden'>Hello! </span><span>I'm Frankie, a recent Software Engineering bootcamp graduate with a strong foundation in full-stack
-                        development. With 7+ years as a Designer, I bring expertise in UI design,
+                        development. With 7+ years as a Designer, I bring expertise in Graphic and UI design,
                         website management, and user-focused problem-solving.</span>
                     </p>
                     <div className="flex gap-4 mb-4">
