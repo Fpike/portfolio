@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
 
       <div className='text-center sm:flex items-center justify-between border-t border-white mx-[10%] mt-12 py-6'>
-        <p>© 2025 Frankie Pike. Built by me using Next.js, TailwindCSS, and ❤️. All rights reserved.</p>
+        <p>© 2025 Frankie Pike. Built by me using Next.js and TailwindCSS. All rights reserved.</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
             <li><a target='_blank' href="https://github.com/Fpike">GitHub</a></li>
             <li><a target='_blank' href="https://www.linkedin.com/in/frankie-pike-198253198">LinkedIn</a></li>
