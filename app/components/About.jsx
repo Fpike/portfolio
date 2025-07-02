@@ -25,7 +25,7 @@ const About = () => {
                         website management, and user-focused problem-solving.</span>
                     </p>
                     <div className="flex gap-4 mb-4">
-                        <a href="/francesca-pike-design.pdf" target="_blank" rel="noopener noreferrer" className="underline cursor-pointer">
+                        <a href="/frankie_pike_design.pdf" target="_blank" rel="noopener noreferrer" className="underline cursor-pointer">
                             Design CV
                         </a>
                         <a href="/francesca-pike-software-development.pdf" target="_blank" rel="noopener noreferrer" className="underline cursor-pointer">
