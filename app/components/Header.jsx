@@ -22,7 +22,7 @@ const Header = () => {
           <span className='text-sm font-medium text-white'>Built by me</span>
         </div>
       </div>
-       
+
       {/* Content */}
       <div className='w-full px-[12%] mt-8'>
         {/* Name and Chevrons */}
@@ -32,10 +32,10 @@ const Header = () => {
             <span className='inline font-light text-stroke'>›››</span>
           </div>
           <div>
-            Software <span className='font-light text-stroke'>development</span> <span className="ipadpro:hidden">&</span>
+            <span className='font-light italic'>Graphic</span> and <span className='font-light italic'>UI</span> <span>Design</span> <span className="ipadpro:hidden">&</span>
           </div>
           <div>
-            <span className='font-light italic'>Graphic</span> and <span className='font-light italic'>UI</span> <span>Design.</span>
+            Software <span className='font-light text-stroke'>development.</span> 
           </div>
         </h1>
 
@@ -62,7 +62,7 @@ const Header = () => {
             />
           </a>
         </div>
-                
+
       </div>
 
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
@@ -76,7 +76,7 @@ const Header = () => {
           />
         </a>
       </div>
-           
+
     </div>
   )
 }

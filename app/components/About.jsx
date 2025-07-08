@@ -9,20 +9,20 @@ const About = () => {
         <div id='about' className='w-full px-[12%] py-10 scroll-mt-20 bg-box'>
             <div className='flex  w-full flex-col lg:flex-row items-center gap-8 my-12'>
                 <div className='w-64 sm:w-80 aspect-square sm:aspect-auto rounded-3xl overflow-hidden'>
-  <Image
-    src={assets.about_image}
-    alt='user'
-    className='w-full h-full object-cover rounded-3xl'
-  />
-</div>
+                    <Image
+                        src={assets.about_image}
+                        alt='user'
+                        className='w-full h-full object-cover rounded-3xl'
+                    />
+                </div>
                 <div className='flex-1'>
                     <h2 className='max-w-2x1 hidden sm:block'>
-                        Hello! 
+                        Hello!
                     </h2>
                     <p className='mb-4 max-w-2x1 mt-4'>
-                        <span className='sm:hidden'>Hello! </span><span>I'm Frankie, a recent Software Engineering bootcamp graduate with a strong foundation in full-stack
-                        development. With 7+ years as a Designer, I bring expertise in Graphic and UI design,
-                        website management, and user-focused problem-solving.</span>
+                        <span className='sm:hidden'>Hello! </span><span>Multi-disciplinary designer with 7+ years' experience spanning print and digital marketing assets, brand identity, and UI/UX
+                            design using the Adobe Suite, Figma, and AI tools. Skilled in website and email development with HTML/CSS, JavaScript
+                            and React, bridging frontend development with creative design.</span>
                     </p>
                     <div className="flex gap-4 mb-4">
                         <a href="/frankie_pike_design.pdf" target="_blank" rel="noopener noreferrer" className="underline cursor-pointer">
@@ -44,9 +44,9 @@ const About = () => {
                             <li role="button" className='bg-white rounded-xl p-5 
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'
                                 key={index}>
-                                    <div className='flex gap-2 pb-2'><Image src={icon} alt={title} className='w-5 h-5'/>
-                                <p className='font-semibold text-gray-800'>{title}</p></div>
-                                
+                                <div className='flex gap-2 pb-2'><Image src={icon} alt={title} className='w-5 h-5' />
+                                    <p className='font-semibold text-gray-800'>{title}</p></div>
+
                                 <p>{description}</p>
                             </li>
                         ))}
