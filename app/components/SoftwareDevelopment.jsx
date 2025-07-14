@@ -77,7 +77,7 @@ const SoftwareDevelopment = () => {
                     <div className="lg:w-4/5 lg:pl-8 relative">
                         <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-gray-200"></div>
                         <p className="text-gray-600 leading-relaxed">
-                            Full-stack developer with experience building robust web apps using a wide range of technologies including JavaScript, Python, and React. Proficient in HTML and CSS, with experience in email and website development.
+                            Full-stack developer with experience building robust web apps using a wide range of technologies including JavaScript, Python, and React. Proficient in HTML and CSS, with experience in both email and website development.
                         </p>
                     </div>
                 </div>
