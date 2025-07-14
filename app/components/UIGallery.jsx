@@ -67,7 +67,7 @@ const UIGallery = () => {
   };
 
   return (
-    <div id="ui" className="w-full px-[12%] py-8 md:py-10 scroll-mt-20 md:pt-16">
+    <div id="ui" className="w-full px-[12%] py-8 md:py-10 scroll-mt-20 md:pt-16 bg-box">
       <div className="w-full max-w-7xl mx-auto md:px-4">
 
         {/* Content section - two columns with divider */}

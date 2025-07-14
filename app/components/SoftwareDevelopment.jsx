@@ -61,7 +61,7 @@ const SoftwareDevelopment = () => {
     };
 
     return (
-        <div id="software" className="w-full px-[12%] py-10 scroll-mt-20">
+        <div id="software" className="w-full px-[12%] py-10 scroll-mt-20 bg-box">
             <div className="w-full max-w-7xl mx-auto">
 
                 {/* Header Section */}
@@ -77,7 +77,7 @@ const SoftwareDevelopment = () => {
                     <div className="lg:w-4/5 lg:pl-8 relative">
                         <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-gray-200"></div>
                         <p className="text-gray-600 leading-relaxed">
-                            Full-stack developer with experience building robust web apps using a wide range of technologies including JavaScript, Python, and React. Proficient in HTML and CSS, with hands-on experience with state management, component reusability, and API integration.
+                            Full-stack developer with experience building robust web apps using a wide range of technologies including JavaScript, Python, and React. Proficient in HTML and CSS, with experience in email and website development.
                         </p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const SoftwareDevelopment = () => {
                                 onClick={() => handleProjectChange(project.id)}
                                 className={`px-6 py-2 rounded-full transition-all duration-200 ${activeProject === project.id
                                     ? 'bg-greenCustom text-white shadow-sm'
-                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                    : 'bg-white text-gray-700 hover:bg-gray-200'
                                     }`}
                             >
                                 {project.title}

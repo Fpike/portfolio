@@ -451,7 +451,7 @@ export const UIData = [
 export const SoftwareData = [
     {
     id: 'meanmoney',
-    title: 'Mean Money',
+    title: 'Mean Money →',
     githubUrl: 'https://github.com/pat-shannon/mean-money',
     images: [
       assets.meanmoney_1,
@@ -471,7 +471,7 @@ export const SoftwareData = [
   },
   {
     id: 'roam',
-    title: 'Roam',
+    title: 'Roam →',
     githubUrl: 'https://github.com/Fpike/roam',
     images: [
       assets.roam_1,
@@ -490,7 +490,7 @@ export const SoftwareData = [
   },
   {
     id: 'makersbnb',
-    title: 'Makersbnb',
+    title: 'Makersbnb →',
     githubUrl: 'https://github.com/NaomiCSmith/byte_brigade_makersbnb',
     images: [
       assets.makersbnb_1,
@@ -509,7 +509,7 @@ export const SoftwareData = [
   },
   {
     id: 'acebook',
-    title: 'Acebook',
+    title: 'Acebook →',
     githubUrl: 'https://github.com/RussellColes/acebook-teamM',
     images: [
       assets.acebook,

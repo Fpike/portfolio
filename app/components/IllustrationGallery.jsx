@@ -57,7 +57,7 @@ const IllustrationGallery = () => {
   };
 
   return (
-    <div id="illustration" className="w-full px-[12%] bg-box scroll-mt-20 py-8 md:py-24 md:pt-24">
+    <div id="illustration" className="w-full px-[12%] bg-white scroll-mt-20 py-8 md:py-24 md:pt-24">
       <div className="w-full max-w-7xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start gap-8">
           {/* Mobile title - only visible on mobile, positioned above image */}

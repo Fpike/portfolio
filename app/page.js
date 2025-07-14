@@ -13,15 +13,15 @@ import Header from "./components/Header";
 export default function Home() {
   return (
     <>
-    <Navbar />
-    <Header />
-    <About />
-    <SoftwareDevelopment />
-    <GraphicsGallery />
-    <UIGallery />
-    <IllustrationGallery />
-    <Contact />
-    <Footer />
+      <Navbar />
+      <Header />
+      <About />
+      <GraphicsGallery />
+      <UIGallery />
+      <IllustrationGallery />
+      <SoftwareDevelopment />
+      <Contact />
+      <Footer />
     </>
   );
 }

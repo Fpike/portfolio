@@ -30,10 +30,10 @@ const Navbar = () => {
         <ul className='hidden md:flex items-center gap-6 lg:gap-8        
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>
             <li><a href='#about'>About</a></li>
-            <li><a href='#software'>Software Development</a></li>
             <li><a href='#graphic'>Graphic Design</a></li>
             <li><a href='#ui'>UI Design</a></li>
             <li><a href='#illustration'>Illustration</a></li>
+            <li><a href='#software'>Software Development</a></li>
         </ul>
         <div className='flex items-center gap-4'>
             <a href='#contact' className='hidden lg:flex items-center gap-3 px-10            
